@@ -32,11 +32,11 @@ Overview |
 
 ## 1. Main idea
 
-The devilbox allows you to have an unlimitted number of projects ready without having to install any external software and without having to configure any virtual hosts. As well as providing a very flexible development stack that you can run offline. (Internet is only required to initially pull docker container).
+The devilbox allows you to have an unlimited number of projects ready without having to install any external software and without having to configure any virtual hosts. As well as providing a very flexible development stack that you can run offline. (Internet is only required to initially pull docker container).
 
 The only thing you will have to do is to create a new folder on the filesystem and your virtual host is ready to be served with your custom domain.
 
-The default project catch-all domain is `*.dev` (see [Configure](Configure.md) for how to change it). Let's view an example:
+The default project catch-all domain is `*.loc` (see [Configure](Configure.md) for how to change it). Let's view an example:
 
 ```shell
 # Inside your main project folder
@@ -50,11 +50,11 @@ drwxr-xr-x 3 cytopia 4096 Jun 10 13:10 yii-test
 
 By having the above folders, the devilbox will automatically be able to serve the following vhosts:
 
-* http://my-drupal.dev
-* http://my-wordpress.dev
-* http://project1.dev
-* http://project2.dev
-* http://yii-test.dev
+* http://my-drupal.loc
+* http://my-wordpress.loc
+* http://project1.loc
+* http://project2.loc
+* http://yii-test.loc
 
 New folders can be created, deleted and removed during run-time and corresponding virtual hosts will be available instantly without having to restart anything.
 
@@ -66,7 +66,7 @@ New folders can be created, deleted and removed during run-time and correspondin
 | **Internet** | |
 | No always-on | Internet connection is only required during initial setup or update (to pull containers), afterwards you can always work offline. |
 | **Projects** | |
-| Unlimitted Projects | Add as many Projects as you need. |
+| Unlimited Projects | Add as many Projects as you need. |
 | Auto VirtualHosts | New VirtualHosts are added instantly without a restart or reload. Just create a new directory and you are ready to go. |
 | Auto DNS | Use the built-in DNS server to stop worrying about `/etc/hosts` setup per project. |
 | Email catch-all | All outgoing emails are intercepted and stored locally. Use the intranet to view any sent email. |
