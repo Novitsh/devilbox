@@ -23,7 +23,7 @@ class Httpd extends BaseClass implements BaseInterface
 	 */
 	public function checkVirtualHost($vhost)
 	{
-		$htdocs		= $this->_docRoot . DIRECTORY_SEPARATOR . $vhost . DIRECTORY_SEPARATOR . 'htdocs';
+		$htdocs		= $this->_docRoot . DIRECTORY_SEPARATOR . $vhost . DIRECTORY_SEPARATOR;
 		$domain		= $vhost . '.' . $this->getTldSuffix();
 		$url		= 'http://'.$domain;
 		$error		= array();

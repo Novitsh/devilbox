@@ -38,7 +38,7 @@
 								<?php foreach ($vHosts as $vHost): ?>
 									<tr>
 										<td><?php echo $vHost['name'];?></td>
-										<td><?php echo loadClass('Helper')->getEnv('HOST_PATH_HTTPD_DATADIR');?>/<?php echo $vHost['name'];?>/htdocs</td>
+										<td><?php echo loadClass('Helper')->getEnv('HOST_PATH_HTTPD_DATADIR');?>/<?php echo $vHost['name'];?>/web</td>
 										<td class="text-xs-center text-xs-small" id="valid-<?php echo $vHost['name'];?>">&nbsp;&nbsp;&nbsp;</td>
 										<td id="href-<?php echo $vHost['name'];?>"><?php echo $filler;?></td>
 									</tr>
